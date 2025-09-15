@@ -56,7 +56,7 @@ def verify_email(email):
     params = {"email": email}
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer api_b1676fec2ebd42e183b4491296c00da0"
+        "Authorization": "myapikey"
     }
     response = requests.get(url, headers=headers, params=params)
     return response.json()
